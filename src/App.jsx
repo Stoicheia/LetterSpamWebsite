@@ -6,10 +6,10 @@ const discordSdk = new DiscordSDK("1384658377078079628");
 
 function App() {
     const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
-        loaderUrl: ".proxy/Build/ToDiscord.loader.js",
-        dataUrl: ".proxy/Build/ToDiscord.data",
-        frameworkUrl: ".proxy/Build/ToDiscord.framework.js",
-        codeUrl: ".proxy/Build/ToDiscord.wasm",
+        loaderUrl: ".proxy/unity/Build/ToDiscord.loader.js",
+        dataUrl: ".proxy/unity/Build/ToDiscord.data",
+        frameworkUrl: ".proxy/unity/Build/ToDiscord.framework.js",
+        codeUrl: ".proxy/unity/Build/ToDiscord.wasm",
     });
     setupDiscordSdk().then(() => {
         console.log("Discord SDK is ready");
